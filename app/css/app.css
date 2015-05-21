@@ -1,0 +1,32 @@
+
+body {
+    font-family: Calibri, Arial, serif;
+    background-color: #CCE6FF;
+    padding:100px;
+}
+
+.box {
+    width: 100%;
+    display: block;
+    background: #CCE6FF;
+    border:1px solid #000;
+    margin:20px auto;
+    box-shadow: rgba(80, 126, 50, 0.5) 0.5px 0.5px 3px;
+    padding: 60px;
+}
+
+.box h1 {
+    margin: 0 0 10px 0;
+    font-size: 18pt;
+    font-weight: bold;
+    color: black;
+    text-shadow: rgba(255, 255, 255, 0.5) 0.3px 0.3px 1px;
+}
+.register{
+    padding-left: 100px;
+}
+#footer{
+    max-height: 200px;
+    background-color: #2AA2E7;
+    color: white;
+}

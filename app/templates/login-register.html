@@ -1,0 +1,95 @@
+<div class="box">
+<h1>Social Network</h1>
+<div class = "row">
+  <div class="col-md-5">
+            <div class="login">
+              <form class="form-horizontal">
+                <fieldset>
+                  <legend>Login</legend>
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">User name</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputUsername" placeholder="User name" ng-model="loginUsername">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="loginUserPassword">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+  </div>
+  <div class="col-md-5">
+   <div class="register">
+              <form class="form-horizontal">
+                <fieldset>
+                  <legend>Register</legend>
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Username</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputUsername" placeholder="Username" ng-model="registerUsername">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Password" ng-model="registerUserPassword">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword" class="col-lg-2 control-label">Confirm password</label>
+                    <div class="col-lg-10">
+                      <input type="password" class="form-control" id="confirmPassword" placeholder="Password" ng-model="confirmUsePassword">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="col-lg-2 control-label">Full name</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputName" placeholder="Name" ng-model="name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="inputEmail" placeholder="Email" ng-model="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label">Gender</label>
+                    <div class="col-lg-10">
+                      <div class="radio" ng-model="gender">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="male" checked="">
+                          Male
+                        </label>
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="female">
+                          Female
+                        </label>
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios3" value="other">
+                          Other
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div> 
+  </div>
+</div>
+</div>
+           
