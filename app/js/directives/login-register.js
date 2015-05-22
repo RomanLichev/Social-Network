@@ -1,6 +1,6 @@
 app.directive('loginRegister', function(){
 	return {
-		controller: 'LoginController',
+		controller: 'LoginRegisterController',
 		restrict: 'E', 
 		templateUrl: 'app/templates/login-register.html',
 	};

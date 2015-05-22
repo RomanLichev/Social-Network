@@ -30,3 +30,12 @@ body {
     background-color: #2AA2E7;
     color: white;
 }
+#logl,img {
+    width:400px;
+    margin: 30px auto;
+    margin-left: 40px;
+    margin-right: 45px;
+}
+.navbar {
+    height: 52px;
+}
