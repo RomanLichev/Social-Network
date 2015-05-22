@@ -1,18 +1,28 @@
 'use strict';
 
-var app = angular.module('socialNetworkModule', ['ngResource','ngRoute'])
+var app = angular.module('socialNetworkModule', ['ngResource','ngRoute']);
 
-	.constant('baseServiceUrl', 'http://softuni-social-network.azurewebsites.net')
-	.constant('pageSize', 2)
-	.config(function ($routeProvider) {
+	app.constant('baseServiceUrl', 'http://softuni-social-network.azurewebsites.net');
+	app.constant('pageSize', 5);
+
+	app.config(function ($routeProvider) {
 		$routeProvider.when('/', {
-			templateUrl: '/app/templates/home.html'
+			templateUrl: '/app/templates/home.html',
 		});
 		$routeProvider.when('/login-register', {
 			templateUrl: '/app/templates/login-register.html',
-			controller:'LoginController'
+			controller:'LoginRegisterController'
 		});
 		$routeProvider.otherwise(
 			{ redirectTo: '/' }
  		);
-});
+ 	});
+
+ 	app.run(function ($rootScope, $location, authService) {
+  		$rootScope.$on('$locationChangeStart', function (event) {
+    	if ($location.path().indexOf("/user/") != -1 && !authService.isLoggedIn())
+    		{
+      			$location.path("/");
+    		}
+    	});
+	});
