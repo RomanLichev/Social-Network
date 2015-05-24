@@ -11,7 +11,9 @@ app.factory('authService',
                 };
                 $http(request).success(function(data) {
                     sessionStorage['currentUser'] = JSON.stringify(data);
+                    var user = (userData.username);
                     success(data);
+
                 }).error(error);
             },
 
@@ -27,9 +29,14 @@ app.factory('authService',
                 }).error(error);
             },
 
+            user: function() {
+                var jsonObj = JSON.parse(sessionStorage['currentUser']);
+                return jsonObj.userName;
+            },
+
             logout: function() {
                 delete sessionStorage['currentUser'];
-            }
+            },
         }
     }
 );

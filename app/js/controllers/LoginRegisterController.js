@@ -6,7 +6,7 @@ app.controller('LoginRegisterController',
             authService.login(userData,
                 function success() {
                     notifyService.showInfo("Login successful");
-                    $location.path("/");
+                    $location.path("/user");
                 },
                 function error(err) {
                     notifyService.showError("Login failed", err);
@@ -17,7 +17,7 @@ app.controller('LoginRegisterController',
             authService.register(userData,
                 function success() {
                     notifyService.showInfo("User registered successfully");
-                    $location.path("/");
+                    $location.path("/user");
                 },
                 function error(err) {
                     notifyService.showError("User registration failed", err);

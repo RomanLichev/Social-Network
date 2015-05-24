@@ -39,3 +39,18 @@ body {
 .navbar {
     height: 52px;
 }
+.image-profil{
+    width: 12%;
+    margin: 0px;
+}
+#imageprofil{
+    margin-right: 50px;
+}
+#panel{
+    width: 82%;
+    max-height:155px; 
+}
+#username{
+     text-decoration: underline;
+     margin-top: 10px;
+}

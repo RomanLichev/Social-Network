@@ -13,6 +13,10 @@ var app = angular.module('socialNetworkModule', ['ngResource','ngRoute']);
 			templateUrl: '/app/templates/login-register.html',
 			controller:'LoginRegisterController'
 		});
+		$routeProvider.when('/user', {
+			templateUrl: '/app/templates/user.html',
+			controller:'LoginRegisterController'
+		});
 		$routeProvider.otherwise(
 			{ redirectTo: '/' }
  		);
